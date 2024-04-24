@@ -7,4 +7,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --air-blue: #669BBC;
+  --papaya-whip: #FDF0D5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100vh;
+  background-color: var(--papaya-whip);
 }
