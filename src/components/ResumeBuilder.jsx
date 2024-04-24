@@ -1,11 +1,11 @@
-import InputPanel from "./InputPanel";
+import ResumeEditor from "./ResumeEditor";
 import ResumeDisplay from "./ResumeDisplay";
 import "../styles/ResumeBuilder.css";
 
 export default function ResumeBuilder() {
   return (
     <>
-      <InputPanel />
+      <ResumeEditor />
       <ResumeDisplay />
     </>
   )
