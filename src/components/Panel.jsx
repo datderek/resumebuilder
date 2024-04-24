@@ -1,19 +1,13 @@
 import { useState } from 'react';
-import Input from './Input';
+import '../styles/Panel.css';
 
-export default function Panel() {
+export default function Panel({ label, children }) {
   const [isActive, setIsActive] = useState(false);
-  const [name, setName] = useState({firstName: '', lastName: ''});
-
-  const handleChange = (key, value) => {
-    setName({...name, [key]: value});
-  }
 
   return (
-    <>
-      <Input label='First Name' value={name.firstName} onChange={(e) => { handleChange('firstName', e.target.value) }}></Input>
-      <Input label='Last Name' value={name.lastName} onChange={(e) => { handleChange('lastName', e.target.value) }}></Input>
-      <div>{name.firstName} {name.lastName}</div>
-    </>
+    <div className="panel">
+      <div>{label}</div>
+      {children}
+    </div>
   )
 }
