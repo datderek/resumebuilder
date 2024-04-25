@@ -46,7 +46,7 @@ export default function ResumeBuilder() {
 
   return (
     <>
-      <ResumeEditor onChange={handleChange}/>
+      <ResumeEditor resumeInformation={resumeInformation} onChange={handleChange}/>
       <ResumeDisplay resumeInformation={resumeInformation}/>
     </>
   )
