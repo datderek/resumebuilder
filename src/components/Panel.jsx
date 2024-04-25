@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../styles/Panel.css';
 
-export default function Panel({ label, children }) {
+export default function Panel({ label, onAddMore, children }) {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = (e) => {
@@ -15,6 +15,9 @@ export default function Panel({ label, children }) {
         <div className='inputs'>
           {children}
         </div>
+      )}
+      {(onAddMore && isActive) && (
+        <button onClick={onAddMore}>+ Add More</button>
       )}
     </div>
   )
