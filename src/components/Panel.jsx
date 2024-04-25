@@ -17,7 +17,7 @@ export default function Panel({ label, onAddMore, children }) {
         </div>
       )}
       {(onAddMore && isActive) && (
-        <button onClick={onAddMore}>+ Add More</button>
+        <button className='add-more-btn' onClick={onAddMore}>+ Add More</button>
       )}
     </div>
   )

@@ -21,7 +21,7 @@ export default function ResumeEditor({ resumeInformation, onChange, onAddMore })
       <Panel label='Projects' onAddMore={() => onAddMore('projects')}>
         {projects.map((project) => {
           return (
-            <div key={project.id}>
+            <div className='project-group' key={project.id}>
               <Input label='Title' value={project.title} onChange={e => onChange('projects', 'title', e.target.value, project.id)}></Input>
               <Input label='Description' value={project.description} onChange={e => onChange('projects', 'description', e.target.value, project.id)}></Input>
               <Input label='Start Date' type='date' value={project.startDate} onChange={e => onChange('projects', 'startDate', e.target.value, project.id)}></Input>
@@ -33,7 +33,7 @@ export default function ResumeEditor({ resumeInformation, onChange, onAddMore })
       <Panel label='Work Experience' onAddMore={() => onAddMore('workExperience')}>
         {workExperience.map((job) => {
           return (
-            <div key={job.id}>
+            <div className='job-group' key={job.id}>
               <Input label='Role' value={job.role} onChange={e => onChange('workExperience', 'role', e.target.value, job.id)}></Input>
               <Input label='Company' value={job.company} onChange={e => onChange('workExperience', 'company', e.target.value, job.id)}></Input>
               <Input label='Description' value={job.description} onChange={e => onChange('workExperience', 'description', e.target.value, job.id)}></Input>

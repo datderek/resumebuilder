@@ -1,22 +1,29 @@
 .panel {
-  width: 500px;
+  width: 100%;
   background-color: white;
-  color: black;
   border-radius: 1rem;
 }
 
 .panel-tab {
-  padding: 1rem;
+  padding: 0.75rem;
   font-size: 2rem;
   font-weight: 500;
 }
 
 .panel-tab.active {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--prussian-blue);
 }
 
 .inputs {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+}
+
+.add-more-btn {
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0 0 1rem 1rem;   
 }
