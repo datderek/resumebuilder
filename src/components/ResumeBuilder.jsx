@@ -18,6 +18,23 @@ export default function ResumeBuilder() {
         startDate: '',
         endDate: '',
       },
+      projects: [
+        {
+          title: '',
+          description: '',
+          startDate: '',
+          endDate: '',
+        }
+      ],
+      work: [
+        {
+          role: '',
+          company: '',
+          description:  '',
+          startDate: '',
+          endDate: ''
+        }
+      ],
     }
   )
 

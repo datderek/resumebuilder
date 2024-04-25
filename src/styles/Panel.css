@@ -1,6 +1,6 @@
 .panel {
   width: 500px;
-  height: 75px;
+  height: auto;
   background-color: white;
   color: black;
 }
