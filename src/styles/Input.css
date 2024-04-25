@@ -1,0 +1,8 @@
+.label-name {
+  font-size: 0.8rem;
+  transform: translate(4px, 4px);
+}
+
+input {
+  width: 100%;
+}
