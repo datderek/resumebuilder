@@ -1,6 +1,5 @@
 import ResumeEditor from "./ResumeEditor";
 import ResumeDisplay from "./ResumeDisplay";
-import "../styles/ResumeBuilder.css";
 import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 
