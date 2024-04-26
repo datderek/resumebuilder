@@ -1,3 +1,5 @@
+import '../styles/ResumeDisplay.css';
+
 export default function ResumeDisplay({ resumeInformation }) {
   return (
     <>

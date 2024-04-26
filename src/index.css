@@ -24,6 +24,7 @@
   height: 100vh;
   background-color: var(--papaya-whip);
   display: flex;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {

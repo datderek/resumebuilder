@@ -1,0 +1,16 @@
+.display {
+  flex: 1;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  overflow: scroll;
+}
+
+.resume {
+  min-width: 21cm;
+  margin-left: auto;
+  margin-right: auto;
+  height: 800px;
+  background-color: white;
+}
+

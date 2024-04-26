@@ -1,5 +1,6 @@
 import Panel from "./Panel";
 import Input from "./Input";
+import '../styles/ResumeEditor.css'
 
 export default function ResumeEditor({ resumeInformation, onChange, onAddMore }) {
   const { general, education, projects, workExperience } = resumeInformation;

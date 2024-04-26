@@ -1,6 +1,5 @@
 .edit-bar {
-  flex: 0 1 650px;
-  min-width: 400px;
+  width: 500px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -9,12 +8,4 @@
   background-color: var(--air-blue);
   color: var(--prussian-blue);
   overflow: auto;
-}
-
-.display {
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--papaya-whip);
 }
