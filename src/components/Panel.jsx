@@ -12,7 +12,7 @@ export default function Panel({ label, onAddMore, children }) {
     <div className='panel'>
       <div className={'panel-tab' + (isActive ? ' active' : '')} onClick={handleClick}>{label}</div>
       {isActive && (
-        <div className='inputs'>
+        <div className='inputs-container'>
           {children}
         </div>
       )}

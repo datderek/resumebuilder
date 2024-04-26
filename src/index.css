@@ -11,6 +11,15 @@
   --air-blue: #669BBC;
   --prussian-blue: #003049;
   --papaya-whip: #FDF0D5;
+  --light-gray: #E9ECEF;
+
+  /* Shadow styling provided by Josh W. Comeau
+    at https://www.joshwcomeau.com/shadow-palette/ */
+  --shadow:
+    0.3px 0.5px 0.7px hsl(0deg 0% 0% / 0.1),
+    1.1px 1.6px 2.2px -0.8px hsl(0deg 0% 0% / 0.1),
+    2.7px 4px 5.4px -1.7px hsl(0deg 0% 0% / 0.1),
+    6.7px 9.7px 13.3px -2.5px hsl(0deg 0% 0% / 0.1);
 }
 
 * {
