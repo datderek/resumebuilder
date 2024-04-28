@@ -16,7 +16,7 @@ export default function ResumeDisplay({ resumeInformation }) {
           <div className='section'>
             <div className='section-title'>EDUCATION</div>
             <div className='group-heading'>
-              <span className='school'>{education.school}</span>
+              <span className='group-title'>{education.school}</span>
               <span className='date'>{education.startDate}</span>
               <span className='date'>{education.endDate}</span>
             </div>
@@ -43,8 +43,7 @@ export default function ResumeDisplay({ resumeInformation }) {
               return (
                 <div className='job' key={job.id}>
                   <div className='group-heading'>
-                    <span className='group-title'>{job.role}</span>
-                    <span>{job.company}</span>
+                    <span className='group-title'>{job.role}{job.company && ` - ${job.company}`}</span>
                     <span className='date'>{job.startDate}</span>
                     <span className='date'>{job.endDate}</span>
                   </div>

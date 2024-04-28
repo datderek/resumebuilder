@@ -8,9 +8,52 @@
 
 .resume {
   min-width: 21cm;
+  padding: 2rem;
   margin-left: auto;
   margin-right: auto;
-  height: 800px;
+  height: 29.7cm;
   background-color: white;
+  box-shadow: var(--shadow);
 }
 
+.resume > .header {
+  height: 88px;
+  padding: 0.5rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--prussian-blue);
+  color: white;
+}
+
+.contacts {
+  height: 40px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--prussian-blue);
+}
+
+.group-heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.group-title {
+  margin-right: auto;
+}
+
+.project, .job {
+  margin-bottom: 0.25rem;
+}
+
+.project:last-of-type, .job:last-of-type {
+  margin-bottom: 0rem;
+}
