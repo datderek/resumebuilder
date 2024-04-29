@@ -1,4 +1,5 @@
 import '../styles/ResumeDisplay.css';
+import DateDisplay from './DateDisplay';
 
 export default function ResumeDisplay({ resumeInformation }) {
   const { general, education, projects, workExperience } = resumeInformation;
@@ -17,8 +18,7 @@ export default function ResumeDisplay({ resumeInformation }) {
             <div className='section-title'>EDUCATION</div>
             <div className='group-heading'>
               <span className='group-title'>{education.school}</span>
-              <span className='date'>{education.startDate}</span>
-              <span className='date'>{education.endDate}</span>
+              {<DateDisplay dateRange={[education.startDate, education.endDate]}/>}
             </div>
             <span className='major'>{education.major}</span>
           </div>
@@ -29,8 +29,7 @@ export default function ResumeDisplay({ resumeInformation }) {
                 <div className='project' key={project.id}>
                   <div className='group-heading'>
                     <span className='group-title'>{project.title}</span>
-                    <span className='date'>{project.startDate}</span>
-                    <span className='date'>{project.endDate}</span>
+                    {<DateDisplay dateRange={[project.startDate, project.endDate]}/>}
                   </div>
                   <div className='description'>{project.description}</div>
                 </div>
@@ -44,8 +43,7 @@ export default function ResumeDisplay({ resumeInformation }) {
                 <div className='job' key={job.id}>
                   <div className='group-heading'>
                     <span className='group-title'>{job.role}{job.company && ` - ${job.company}`}</span>
-                    <span className='date'>{job.startDate}</span>
-                    <span className='date'>{job.endDate}</span>
+                    {<DateDisplay dateRange={[job.startDate, job.endDate]}/>}
                   </div>
                   <div className='description'>{job.description}</div>
                 </div>
