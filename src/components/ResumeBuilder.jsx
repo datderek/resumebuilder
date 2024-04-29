@@ -86,9 +86,16 @@ export default function ResumeBuilder() {
     setResumeInformation(newResumeInformation);
   }
 
+  const handleDelete = (category, id) => {
+    const oldCategory = [...resumeInformation[category]];
+    const newCategory = oldCategory.filter((object) => object.id !== id);
+    const newResumeInformation = {...resumeInformation, [category]: newCategory};
+    setResumeInformation(newResumeInformation);
+  }
+
   return (
     <>
-      <ResumeEditor resumeInformation={resumeInformation} onChange={handleChange} onAddMore={handleAddMore}/>
+      <ResumeEditor resumeInformation={resumeInformation} onChange={handleChange} onAddMore={handleAddMore} onDelete={handleDelete}/>
       <ResumeDisplay resumeInformation={resumeInformation}/>
     </>
   )

@@ -3,7 +3,7 @@ import Input from "./Input";
 import DateRangeInput from "./DateRangeInput";
 import '../styles/ResumeEditor.css'
 
-export default function ResumeEditor({ resumeInformation, onChange, onAddMore }) {
+export default function ResumeEditor({ resumeInformation, onChange, onAddMore, onDelete }) {
   const { general, education, projects, workExperience } = resumeInformation;
 
   return (
@@ -27,7 +27,7 @@ export default function ResumeEditor({ resumeInformation, onChange, onAddMore })
         {projects.map((project) => {
           return (
             <div className='input-group project' key={project.id}>
-              <button className='delete-btn'/>
+              <button className='delete-btn' onClick={() => onDelete('projects', project.id)}/>
               <Input label='Title' value={project.title} onChange={e => onChange('projects', 'title', e.target.value, project.id)}/>
               <Input label='Description' value={project.description} onChange={e => onChange('projects', 'description', e.target.value, project.id)}/>
               <DateRangeInput dateRange={[project.startDate, project.endDate]} onChange={onChange} category={'projects'} id={project.id}/>
