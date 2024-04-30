@@ -39,6 +39,7 @@ export default function ResumeEditor({ resumeInformation, onChange, onAddMore, o
         {workExperience.map((job) => {
           return (
             <div className='input-group work' key={job.id}>
+              <button className='delete-btn' onClick={() => onDelete('workExperience', job.id)}/>
               <Input label='Role' value={job.role} onChange={e => onChange('workExperience', 'role', e.target.value, job.id)}/>
               <Input label='Company' value={job.company} onChange={e => onChange('workExperience', 'company', e.target.value, job.id)}/>
               <Input label='Description' value={job.description} onChange={e => onChange('workExperience', 'description', e.target.value, job.id)}/>
