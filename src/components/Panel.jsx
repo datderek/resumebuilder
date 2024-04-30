@@ -10,7 +10,10 @@ export default function Panel({ label, onAddMore, children }) {
 
   return (
     <div className='panel'>
-      <div className={'panel-tab' + (isActive ? ' active' : '')} onClick={handleClick}>{label}</div>
+      <div className={'panel-tab' + (isActive ? ' active' : '')} onClick={handleClick}>
+        {label}
+        <img className='arrow' src='/arrow.svg' alt=''/>
+      </div>
       {isActive && (
         <div className='inputs-container'>
           {children}

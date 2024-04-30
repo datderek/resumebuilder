@@ -9,10 +9,22 @@
   padding: 0.75rem;
   font-size: 2rem;
   font-weight: 500;
+  display: flex;
 }
 
 .panel-tab.active {
   border-bottom: 1px solid var(--prussian-blue);
+}
+
+.arrow {
+  margin-left: auto;
+  margin-right: 1rem;
+  will-change: transform;
+  transition: 250ms transform ease-in-out;
+}
+
+.panel-tab.active .arrow {
+  transform: rotate(180deg);
 }
 
 .inputs-container { /*maybe rename this*/

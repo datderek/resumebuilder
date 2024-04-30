@@ -8,6 +8,7 @@ export default function ResumeEditor({ resumeInformation, onChange, onAddMore, o
 
   return (
     <div className="edit-bar">
+      <img className='logo' src='/logo.png' alt=''/>
       <Panel label='General'>
         <div className='input-group'>
           <Input label='Full Name' value={general.name} onChange={e => onChange('general', 'name', e.target.value)}/>
